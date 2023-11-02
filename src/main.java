@@ -76,9 +76,9 @@ public class main {
 
         StringBuilder stringBuilder = new StringBuilder(String.valueOf(number));
 
-        String firstSubstring = stringBuilder.substring(0,3);
+        String firstSubstring = stringBuilder.substring(0, 3);
         System.out.println("firstSubstring: " + firstSubstring);
-        String secondSubstring = stringBuilder.substring(3,6);
+        String secondSubstring = stringBuilder.substring(3, 6);
         System.out.println("secondSubstring: " + secondSubstring);
 
 
@@ -90,7 +90,7 @@ public class main {
 
         }
 
-        if (sum1 == sum2){
+        if (sum1 == sum2) {
             System.out.println("У Вас счастливое число!");
         } else {
             System.out.println("У Вас несчастливое число!");
@@ -98,7 +98,8 @@ public class main {
 
     }
 
-    public static void task6(){
+    //Task6
+    public static void task6() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Вычисление факториала\nВведите положительное число ");
 
@@ -106,13 +107,13 @@ public class main {
 
         int result = 1;
 
-        if(number == 0 || number == 1){
+        if (number == 0) {
             result = 1;
         }
         for (int i = 1; i < number; i++) {
-
+            result = result * i;
         }
-
+        System.out.println("Факториал от " + number + ": " + result);
     }
 
 }
